@@ -1,0 +1,6 @@
+framework module Pods_MoyaRxSwiftLearn {
+  umbrella header "Pods-MoyaRxSwiftLearn-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,18 @@
+platform :ios, '8.0'
+use_frameworks!
+
+target 'MoyaRxSwiftLearn' do
+pod 'SwiftyJSON'
+pod 'Alamofire'
+pod 'KeychainAccess'
+pod 'AlamofireImage'
+pod 'SideMenu'
+pod 'AVOSCloud'
+pod 'SwiftHTTP'
+pod 'RxSwift'
+pod 'RxCocoa'
+pod 'Moya/RxSwift'
+pod 'ReachabilitySwift'
+pod 'Kingfisher'
+inhibit_all_warnings!
+end
