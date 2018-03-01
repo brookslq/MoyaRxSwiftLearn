@@ -45,7 +45,7 @@ struct Network {
     }
 }
 
-class ViewController: UIViewController {
+class MoyaViewController: UIViewController {
 
     
     // 显示频道列表的tableview
@@ -53,9 +53,13 @@ class ViewController: UIViewController {
     // 频道列表数据
     var channels: Array<JSON> = []
     
+    override func viewWillAppear(_ animated: Bool) {
+        // 从登录进来显示导航栏
+        self.navigationController?.isNavigationBarHidden = false
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setupUI()
     }
     
@@ -135,7 +139,7 @@ class ViewController: UIViewController {
  
 }
 
-extension ViewController: UITableViewDelegate {
+extension MoyaViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // 获取选中项信息
         let channelName = channels[indexPath.row]["name"].stringValue
@@ -179,7 +183,7 @@ extension ViewController: UITableViewDelegate {
     }
 }
 
-extension ViewController: UITableViewDataSource {
+extension MoyaViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1

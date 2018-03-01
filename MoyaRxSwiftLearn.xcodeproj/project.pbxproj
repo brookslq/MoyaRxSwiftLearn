@@ -8,8 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		772048F93C23CD8F376599D8 /* Pods_MoyaRxSwiftLearn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57CD22C2ACC1DD2872EAE56A /* Pods_MoyaRxSwiftLearn.framework */; };
+		982F1D732043A785009D922F /* RxSwiftLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982F1D722043A785009D922F /* RxSwiftLoginViewController.swift */; };
+		982F1D782043DC86009D922F /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982F1D772043DC86009D922F /* Protocol.swift */; };
+		982F1D7A2043DCA3009D922F /* ValidationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982F1D792043DCA3009D922F /* ValidationService.swift */; };
+		982F1D7C2043EE20009D922F /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982F1D7B2043EE20009D922F /* RegisterViewModel.swift */; };
+		982F1DCD20454B84009D922F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982F1DCC20454B84009D922F /* LoginViewModel.swift */; };
+		983CDD8A204790B70015657C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983CDD88204790B70015657C /* RegisterViewController.swift */; };
+		983CDD8B204790B70015657C /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 983CDD89204790B70015657C /* RegisterViewController.xib */; };
 		9859788D203FACBB0039F8A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9859788C203FACBB0039F8A2 /* AppDelegate.swift */; };
-		9859788F203FACBB0039F8A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9859788E203FACBB0039F8A2 /* ViewController.swift */; };
+		9859788F203FACBB0039F8A2 /* MoyaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9859788E203FACBB0039F8A2 /* MoyaViewController.swift */; };
 		98597892203FACBB0039F8A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98597890203FACBB0039F8A2 /* Main.storyboard */; };
 		98597894203FACBB0039F8A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98597893203FACBB0039F8A2 /* Assets.xcassets */; };
 		98597897203FACBB0039F8A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98597895203FACBB0039F8A2 /* LaunchScreen.storyboard */; };
@@ -38,9 +45,16 @@
 
 /* Begin PBXFileReference section */
 		57CD22C2ACC1DD2872EAE56A /* Pods_MoyaRxSwiftLearn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoyaRxSwiftLearn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		982F1D722043A785009D922F /* RxSwiftLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftLoginViewController.swift; sourceTree = "<group>"; };
+		982F1D772043DC86009D922F /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		982F1D792043DCA3009D922F /* ValidationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationService.swift; sourceTree = "<group>"; };
+		982F1D7B2043EE20009D922F /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		982F1DCC20454B84009D922F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		983CDD88204790B70015657C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		983CDD89204790B70015657C /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		98597889203FACBB0039F8A2 /* MoyaRxSwiftLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoyaRxSwiftLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9859788C203FACBB0039F8A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9859788E203FACBB0039F8A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9859788E203FACBB0039F8A2 /* MoyaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaViewController.swift; sourceTree = "<group>"; };
 		98597891203FACBB0039F8A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98597893203FACBB0039F8A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98597896203FACBB0039F8A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -91,6 +105,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		982F1D712043A73D009D922F /* Moya */ = {
+			isa = PBXGroup;
+			children = (
+				985978BC204007020039F8A2 /* RequestAlertPlugin.swift */,
+				9859788E203FACBB0039F8A2 /* MoyaViewController.swift */,
+				985978BA203FAF6C0039F8A2 /* DouBanAPI.swift */,
+			);
+			path = Moya;
+			sourceTree = "<group>";
+		};
+		982F1D762043ADB1009D922F /* RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				982F1D722043A785009D922F /* RxSwiftLoginViewController.swift */,
+				983CDD88204790B70015657C /* RegisterViewController.swift */,
+				983CDD89204790B70015657C /* RegisterViewController.xib */,
+				982F1DCC20454B84009D922F /* LoginViewModel.swift */,
+				982F1D7B2043EE20009D922F /* RegisterViewModel.swift */,
+				982F1D772043DC86009D922F /* Protocol.swift */,
+				982F1D792043DCA3009D922F /* ValidationService.swift */,
+			);
+			path = RxSwift;
+			sourceTree = "<group>";
+		};
 		98597880203FACBB0039F8A2 = {
 			isa = PBXGroup;
 			children = (
@@ -116,14 +154,13 @@
 		9859788B203FACBB0039F8A2 /* MoyaRxSwiftLearn */ = {
 			isa = PBXGroup;
 			children = (
-				9859788C203FACBB0039F8A2 /* AppDelegate.swift */,
-				9859788E203FACBB0039F8A2 /* ViewController.swift */,
-				98597890203FACBB0039F8A2 /* Main.storyboard */,
-				98597893203FACBB0039F8A2 /* Assets.xcassets */,
-				98597895203FACBB0039F8A2 /* LaunchScreen.storyboard */,
 				98597898203FACBB0039F8A2 /* Info.plist */,
-				985978BA203FAF6C0039F8A2 /* DouBanAPI.swift */,
-				985978BC204007020039F8A2 /* RequestAlertPlugin.swift */,
+				9859788C203FACBB0039F8A2 /* AppDelegate.swift */,
+				98597890203FACBB0039F8A2 /* Main.storyboard */,
+				98597895203FACBB0039F8A2 /* LaunchScreen.storyboard */,
+				98597893203FACBB0039F8A2 /* Assets.xcassets */,
+				982F1D762043ADB1009D922F /* RxSwift */,
+				982F1D712043A73D009D922F /* Moya */,
 			);
 			path = MoyaRxSwiftLearn;
 			sourceTree = "<group>";
@@ -266,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98597897203FACBB0039F8A2 /* LaunchScreen.storyboard in Resources */,
+				983CDD8B204790B70015657C /* RegisterViewController.xib in Resources */,
 				98597894203FACBB0039F8A2 /* Assets.xcassets in Resources */,
 				98597892203FACBB0039F8A2 /* Main.storyboard in Resources */,
 			);
@@ -340,9 +378,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9859788F203FACBB0039F8A2 /* ViewController.swift in Sources */,
+				983CDD8A204790B70015657C /* RegisterViewController.swift in Sources */,
+				982F1D7A2043DCA3009D922F /* ValidationService.swift in Sources */,
+				9859788F203FACBB0039F8A2 /* MoyaViewController.swift in Sources */,
 				985978BB203FAF6C0039F8A2 /* DouBanAPI.swift in Sources */,
+				982F1D782043DC86009D922F /* Protocol.swift in Sources */,
+				982F1D732043A785009D922F /* RxSwiftLoginViewController.swift in Sources */,
 				9859788D203FACBB0039F8A2 /* AppDelegate.swift in Sources */,
+				982F1D7C2043EE20009D922F /* RegisterViewModel.swift in Sources */,
+				982F1DCD20454B84009D922F /* LoginViewModel.swift in Sources */,
 				985978BD204007020039F8A2 /* RequestAlertPlugin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,6 +557,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6H43AH2DUM;
 				INFOPLIST_FILE = MoyaRxSwiftLearn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sipsd.MoyaRxSwiftLearn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -529,6 +574,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6H43AH2DUM;
 				INFOPLIST_FILE = MoyaRxSwiftLearn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sipsd.MoyaRxSwiftLearn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
