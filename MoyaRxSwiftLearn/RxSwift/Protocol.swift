@@ -72,13 +72,3 @@ extension Reactive where Base: UITextField {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
